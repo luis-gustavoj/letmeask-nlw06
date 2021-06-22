@@ -1,4 +1,4 @@
-# NLW06 - letmeask project
+# NLW06 - Letmeask project
 
 A project to make viable answering questions during a live show creating a room to viewers do their askings.
 
