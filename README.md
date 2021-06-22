@@ -4,7 +4,10 @@ A project to make viable answering questions during a live show creating a room 
 
 ### Technologies used in the project
 
-🔹 Typescript
-🔹 ReactJS
-🔹 CSS
-🔹 Firebase
+#### 🔹 Typescript
+
+#### 🔹 ReactJS
+
+#### 🔹 SCSS
+
+#### 🔹 Firebase
