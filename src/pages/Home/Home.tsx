@@ -14,7 +14,7 @@ import { database } from "../../services/firebase";
 
 export function Home() {
   const history = useHistory();
-  const { signInWithGoogle, user } = useAuth();
+  const { signInWithGoogle, user, signOut } = useAuth();
   const [roomCode, setRoomCode] = useState("");
 
   async function handleCreateRoom() {
@@ -23,6 +23,14 @@ export function Home() {
     }
 
     history.push("/rooms/new");
+  }
+
+  async function handleSignOut() {
+    if (user) {
+      await signOut();
+    }
+
+    history.push("/");
   }
 
   async function handleJoinRoom(event: FormEvent) {
@@ -60,7 +68,7 @@ export function Home() {
       <main>
         <div className="main-container">
           <img src={logoImg} alt="Letmeask" />
-          {!user && (
+          {!user ? (
             <>
               <button onClick={handleCreateRoom} className="create-room-button">
                 <img src={googleIconImg} alt="Google logo" />
@@ -68,6 +76,16 @@ export function Home() {
               </button>
               <div className="separator">or enter in a room</div>
             </>
+          ) : (
+            <div className="user-container">
+              <div className="user-info">
+                <img src={user.avatar} alt={user.name} />
+                <span>{user.name}</span>
+              </div>
+              <Button isOutlined onClick={handleSignOut}>
+                Logout
+              </Button>
+            </div>
           )}
           <form onSubmit={handleJoinRoom}>
             <input
