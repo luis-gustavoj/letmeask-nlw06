@@ -1,13 +1,24 @@
-# NLW06 - Letmeask project
+# 📧 NLW06 - Letmeask project 
 
-A project to make viable answering questions during a live show creating a room to viewers do their askings.
+### A project to make viable answering questions during a live show creating a room to viewers do their askings.
 
-### Technologies used in the project
+## 💻 Technologies used in the project
 
-#### 🔹 Typescript
+- Typescript 
+- Javascript ES6 
+- CSS (Sass) 
+- Firebase 
 
-#### 🔹 ReactJS
+## 🔧 Funcionalities
 
-#### 🔹 SCSS
+- [ ✔ ] Firebase Authentication
+- [ ✔ ] Firebase Realtime DB Rules
+- [ ✔ ] Create a room
+- [ ✔ ] Joim a existing room
+- [ ✔ ] Delete a room
+- [ ✔ ] Create a question
+- [ ✔ ] Highlight question
+- [ ✔ ] Mark question as answered
 
-#### 🔹 Firebase
+
+
